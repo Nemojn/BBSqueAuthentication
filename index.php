@@ -20,8 +20,8 @@ use Steampixel\Route;
 // Define route constants:
 define('ROUTE_URL_INDEX', rtrim($_ENV['AUTH0_BASE_URL'], '/'));
 define('ROUTE_URL_LOGIN', ROUTE_URL_INDEX . '/login');
-define('ROUTE_URL_CALLBACK', ROUTE_URL_INDEX . '/homepage.php');
-define('ROUTE_URL_LOGOUT', ROUTE_URL_INDEX . '/logout.php');
+define('ROUTE_URL_CALLBACK', ROUTE_URL_INDEX . '/callback');
+define('ROUTE_URL_LOGOUT', ROUTE_URL_INDEX . '/logout');
 
 Route::add('/', function() use ($auth0) {
 	$session = $auth0->getCredentials();
