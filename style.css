@@ -1,0 +1,21 @@
+body {
+	background-color: black;
+	font-family: monospace;
+}
+
+.centered {
+	text-align: center;
+}
+
+.header {
+	text-align: center;
+}
+
+.right {
+	text-align: right;
+}
+
+pre {
+	color: lime;
+	font-family: monospace;
+}
